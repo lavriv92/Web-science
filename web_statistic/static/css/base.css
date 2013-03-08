@@ -247,7 +247,7 @@ nav ul:last-child >li:last-child{
 	text-align: center;
 }
 
-.email_login input{
+input{
 	border-radius: 4px;
 	padding-left: 5px;
 	padding-right: 5px;
@@ -259,11 +259,11 @@ nav ul:last-child >li:last-child{
 	outline: none;
 }
 
-.email_login input:focus{
+input:focus{
      box-shadow: 0 0 1px #136AC1;
 }
 
-.email_login input[type=submit]{
+input[type=submit]{
 	height: 45px;
 	background-image: -webkit-linear-gradient(#FEFEFE,#EEE);
 	font-size: 14px;
@@ -280,7 +280,7 @@ nav ul:last-child >li:last-child{
 	font-weight: bold;
 }
 
-.email_login input[type=submit]:hover{
+input[type=submit]:hover{
 	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
 
@@ -347,4 +347,91 @@ nav ul:last-child >li:last-child{
 .log_a ul{
 	width: 390px;
 	background: #000;
+}
+
+.login_form{
+	width: 580px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin: 50px auto 30px;
+	background: white;
+	text-align: center;
+	box-shadow: 0 1px 6px #BBB;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+	border-radius: 2px;
+	padding-bottom: 0;
+}
+
+.login_form h3{
+	color: #444;
+	margin-top: 20px;
+	font-size: 22px;
+	font-family: Arial;
+	font-weight: normal;
+	padding-bottom: 20px;
+}
+
+.social_login{
+	height: 80px;
+	border-bottom: 1px solid #ddd;
+}
+
+.social_login a.twitter_login{
+	background: #0BA8D6;
+	color: #fff;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+	height: 30px;
+	line-height: 30px;
+	display: inline-block;
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 13px;
+	width: 170px;
+	border: 5px solid #ddd;
+	border-radius: 8px;
+	cursor: pointer;
+	margin-left: -10px
+}
+
+.social_login a.facebook_login{
+	background: #415D9C;
+	border: 1px solid #3A5695;
+	font-family: Arial;
+	color: #fff;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+	height: 30px;
+	line-height: 30px;
+	font-size: 13px;
+	display: inline-block;
+	width: 170px;
+	border: 5px solid #ddd;
+	border-radius: 8px;
+	cursor: pointer;
+	margin-left: 10px;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+.email_log{
+	height: 220px;
+	background-image: -webkit-linear-gradient(#FEFEFE,#F4F4F4);
+}
+
+.email_log form{
+	margin-top: 20px;
+}
+
+.email_log input[type="submit"]{
+	background-image: -webkit-linear-gradient(#94D52D,#65C31F);
+	width: 140px;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+	color: #fff;
+	-webkit-appearance: button;
+	border: 1px solid #57AF17;
+}
+
+input[type="submit"]:hover{
+	background-position: 0 0;
+	border-color: #56AD14;
+	box-shadow: none;
 }
