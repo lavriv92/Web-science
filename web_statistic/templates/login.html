@@ -2,7 +2,7 @@
 {% block content %}
 <div class="content">
 	<div class="login_form"> 
-		<h3>Create your account</h3>
+		<h3>Log in to your account</h3>
 		<div class="social_login">
 			<a class="twitter_login">Log In with Twitter</a>
 			<a class="facebook_login">Log In with Facebook</a>
@@ -11,9 +11,13 @@
 			<form>
 				<input type="text" placeholder="Username"><br>
 				<input type="password" placeholder="Password"><br>
-				<input type="submit">
+				<input type="submit" value="Log In">
 			</form>
 		</div>
+	</div>
+	<div class="login_actions">
+		<a href="#">Forgot your password?</a>
+		<span>Need an account?</span><a href="/signup/"> Sign up</a>
 	</div>
 </div>
 {% endblock %}

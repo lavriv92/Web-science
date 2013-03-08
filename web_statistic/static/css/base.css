@@ -430,8 +430,42 @@ input[type=submit]:hover{
 	border: 1px solid #57AF17;
 }
 
-input[type="submit"]:hover{
+.email_log input[type="submit"]:hover{
 	background-position: 0 0;
 	border-color: #56AD14;
 	box-shadow: none;
 }
+
+.login_actions{
+	text-align: center;
+}
+
+.login_actions a{
+	color: #666;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	
+}
+
+.login_actions a:last-child{
+	margin-left: 3px;
+}
+
+.login_actions a:hover{
+	text-decoration: underline;
+	
+}
+
+.login_actions  span{
+	color: #999;
+	font-weight: normal;
+	text-decoration: none;
+	margin-left: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.sg .email_log{
+	height: 320px;
+}
+

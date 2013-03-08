@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="content">
+	<div class="login_form sg"> 
+		<h3>Create your free account</h3>
+		<div class="social_login">
+			<a class="twitter_login">Sign Up with Twitter</a>
+			<a class="facebook_login">Sign Up with Facebook</a>
+		</div>
+		<div class="email_log">
+			<div class="email_title">Or with email</div>
+			<form>
+				<input type="text" placeholder="Username"><br>
+				<input type="text" placeholder="Email"><br>
+				<input type="password" placeholder="Password"><br>
+				<input type="submit" value="Create Account">
+			</form>
+		</div>
+	</div>
+	<div class="login_actions">
+		<span>Already have an account?</span><a href="/login/"> Log in</a>
+	</div>
+</div>
+{% endblock %}

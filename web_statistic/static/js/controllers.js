@@ -80,7 +80,3 @@ var GuiController = {
 	  	},400);
 	},
 };
-
-
-
-
