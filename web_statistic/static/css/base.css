@@ -13,6 +13,10 @@ header{
 	box-shadow: 0 0 10px #ddd;
 }
 
+header a{
+	text-decoration: none;
+}
+
 footer{
 	background: #fff;
 	height: 300px;
@@ -187,6 +191,8 @@ nav ul:last-child >li:last-child{
 .social_form a.twitter{
 	background: url('/static/img/icon-twitter.png');
 	background-image: -webkit-linear-gradient(#35BFE7,#0BA8D6);
+	background-image: -moz-linear-gradient(#35BFE7,#0BA8D6);
+	background-image: -o-linear-gradient(#35BFE7,#0BA8D6);
 	border-radius: 4px;
 	width: 80%;
 	font-size: 16px;
@@ -213,6 +219,8 @@ nav ul:last-child >li:last-child{
 
 .social_form a.facebook{
 	background-image: -webkit-linear-gradient(#679ACE,#4264B3);
+	background-image: -moz-linear-gradient(#679ACE,#4264B3);
+	background-image: -o-linear-gradient(#679ACE,#4264B3);
 	border-radius: 4px;
 	width: 80%;
 	font-size: 16px;
@@ -266,6 +274,8 @@ input:focus{
 input[type=submit]{
 	height: 45px;
 	background-image: -webkit-linear-gradient(#FEFEFE,#EEE);
+	background-image: -moz-linear-gradient(#FEFEFE,#EEE);
+	background-image: -o-linear-gradient(#FEFEFE,#EEE);
 	font-size: 14px;
 	border: 1px solid #CCC;
 	border-top: 1px solid #DDD;
@@ -415,6 +425,8 @@ input[type=submit]:hover{
 .email_log{
 	height: 220px;
 	background-image: -webkit-linear-gradient(#FEFEFE,#F4F4F4);
+	background-image: -moz-linear-gradient(#FEFEFE,#F4F4F4);
+	background-image: -o-linear-gradient(#FEFEFE,#F4F4F4);
 }
 
 .email_log form{
@@ -423,6 +435,8 @@ input[type=submit]:hover{
 
 .email_log input[type="submit"]{
 	background-image: -webkit-linear-gradient(#94D52D,#65C31F);
+	background-image: -moz-linear-gradient(#94D52D,#65C31F);
+	background-image: -o-linear-gradient(#94D52D,#65C31F);
 	width: 140px;
 	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
 	color: #fff;
