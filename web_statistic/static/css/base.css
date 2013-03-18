@@ -1,37 +1,36 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 }
-
-aaaaaaa
 
 body {
 	background: whiteSmoke;
 }
 
-header{
+header {
 	height: 80px;
 	background: #fff;
 	box-shadow: 0 0 10px #ddd;
 }
 
-header a{
+header a {
 	text-decoration: none;
 }
 
-footer{
+footer {
 	background: #fff;
 	height: 300px;
 	box-shadow: 0 0 10px #ddd;
+	clear: both;
 }
 
-.wrapper{
+.wrapper {
 	width: 1000px;
 	margin: 0 auto;
 	color: #DD390D;
 }
 
-h1{
+h1 {
 	color: #DD390D;
 	line-height: 80px;
 	font-weight: normal;
@@ -39,47 +38,55 @@ h1{
 	float: left;
 }
 
-.content{
+.content {
 	width: 940px;
 	margin: 0 auto;
 	padding: 20px;
 	padding-bottom: 40px;
 }
 
-.block{
+.block {
 	width: 940px;
-	min-height: 100px;
+	height: auto;
 	margin-top: 10px;
 }
 
-.round{
+.round {
 	background: #fff;
 	border-radius: 100px;
 	display: inline-block;
 	float: left;
-	min-height: 100px;
-	min-width: 100px;
+	min-height: 80px;
+	margin: 20px;
+	float: left;
+	min-width: 80px;
+	background: #ccc;
 	margin-left: 20px;
+	box-shadow: 0 0 5px #ddd;
 }
 
-nav{
+img {
+	width: 80px;
+	height: 80px;
+}
+
+nav {
 	float: right;
 	line-height: 80px;
 	
 }
 
-nav li{
+nav li {
 	display: inline;
 	list-style: none;
 }
 
-nav li:last-child{
+nav li:last-child {
 	margin-right: 30px;
 }
 
-nav li>a{
+nav li>a {
 	color: #666;
-	
 	line-height: 30px;
 	display: inline-block;
     font-size: 16px;
@@ -88,35 +95,35 @@ nav li>a{
     padding: 0px 13px;
 }
 
-nav li a:hover{
+nav li a:hover {
 	color: #333;
 }
 
-nav ul{
+nav ul {
 	margin-top: 15px;
 	line-height: 40px;
 	float: left;
 	display: inline-block;
 }
 
-nav ul:first-child{
+nav ul:first-child {
 	border-right: 1px solid #ccc;
 }
 
-nav ul:last-child{
+nav ul:last-child {
 	margin-left: 30px;
 	line-height: 40px;
 }
 
-nav ul:last-child >li{
+nav ul:last-child >li {
 	display: inline-block;
 }
 
-nav ul:last-child >li:last-child{
+nav ul:last-child >li:last-child {
 	margin-left: 15px;
 }
 
-.button{
+.button {
 	margin-top: 3px;
 	height: 29px;
 	width: 74px;
@@ -130,11 +137,11 @@ nav ul:last-child >li:last-child{
 	font-family: Arial;
 }
 
-.button:hover{
+.button:hover {
 	border: 2px solid #ddd;
 }
 
-.register_window{
+.register_window {
 	width: 390px;
 	background: #fff;
 	margin: 0 auto;
@@ -143,7 +150,7 @@ nav ul:last-child >li:last-child{
 	border-radius: 4px;
 }
 
-.window_wrapper{
+.window_wrapper {
 	background: url('/static/img/bg.png');
 	background-repeat:repeat;
 	width: 100%;
@@ -152,13 +159,13 @@ nav ul:last-child >li:last-child{
 	opacity: 0;
 }
 
-.top_form{
+.top_form {
 	background: #eee;
 	height: 35px;
 	border-bottom: 1px solid #ccc;
 }
 
-.top_form h3{
+.top_form h3 {
 	font-size: 14px;
 	font-family: Arial;
 	font-weight: normal;
@@ -168,7 +175,7 @@ nav ul:last-child >li:last-child{
 	padding-left: 40px;
 }
 
-.top_form a{
+.top_form a {
 	line-height: 35px;
 	float: right;
 	font-size: 30px;
@@ -179,18 +186,18 @@ nav ul:last-child >li:last-child{
 	cursor: pointer;
 }
 
-.top_form a:hover{
+.top_form a:hover {
 	color: #000;
 }
 
-.social_form{
+.social_form {
 	text-align: center;
 	padding: 30px;
 	border-bottom: 1px solid #ccc;
 	height: 166px;
 }
 
-.social_form a.twitter{
+.social_form a.twitter {
 	background: url('/static/img/icon-twitter.png');
 	background-image: -webkit-linear-gradient(#35BFE7,#0BA8D6);
 	background-image: -moz-linear-gradient(#35BFE7,#0BA8D6);
@@ -211,15 +218,15 @@ nav ul:last-child >li:last-child{
 	border: 1px solid #136AC1;
 }
 
-.social_form a.facebook:hover{
+.social_form a.facebook:hover {
 	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset;
 }
 
-.social_form a.twitter:hover{
+.social_form a.twitter:hover {
 	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset;
 }
 
-.social_form a.facebook{
+.social_form a.facebook {
 	background-image: -webkit-linear-gradient(#679ACE,#4264B3);
 	background-image: -moz-linear-gradient(#679ACE,#4264B3);
 	background-image: -o-linear-gradient(#679ACE,#4264B3);
@@ -237,27 +244,27 @@ nav ul:last-child >li:last-child{
 	border: 1px solid #1B345A;
 }
 
-.reg{
+.reg {
 	height: 615px;
 }
 
-.log{
+.log {
 	height: 550px;
 }
 
-.reg .email_login{
+.reg .email_login {
 	height: 310px;
 	border-bottom: 1px solid #ccc;
 	text-align: center;
 }
 
-.log .email_login{
+.log .email_login {
 	height: 240px;
 	border-bottom: 1px solid #ccc;
 	text-align: center;
 }
 
-input{
+input {
 	border-radius: 4px;
 	padding-left: 5px;
 	padding-right: 5px;
@@ -266,14 +273,16 @@ input{
 	margin-bottom: 20px;
 	width: 280px;
 	border: 1px solid #ccc;
+	color: #999;
+	font-size: 15px;
 	outline: none;
 }
 
-input:focus{
+input:focus {
      box-shadow: 0 0 1px #136AC1;
 }
 
-input[type=submit]{
+input[type=submit] {
 	height: 45px;
 	background-image: -webkit-linear-gradient(#FEFEFE,#EEE);
 	background-image: -moz-linear-gradient(#FEFEFE,#EEE);
@@ -292,11 +301,11 @@ input[type=submit]{
 	font-weight: bold;
 }
 
-input[type=submit]:hover{
+input[type=submit]:hover {
 	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
 
-.email_title{
+.email_title {
 	margin-top: 40px;
 	margin-bottom: 15px;
 	text-align: center;
@@ -308,7 +317,7 @@ input[type=submit]:hover{
 }
 
 
-.login_a a{
+.login_a a {
 	color: #08c;
 	font-size: 12px;
 	border: none;
@@ -317,7 +326,7 @@ input[type=submit]:hover{
 	margin-right: 100px;
 }
 
-.login_a a:hover{
+.login_a a:hover {
 	color: #08c;
 	font-size: 12px;
 	border: none;
@@ -325,17 +334,17 @@ input[type=submit]:hover{
 	text-decoration: underline;
 }
 
-.login_a a span{
+.login_a a span {
 	color: #999;
 }
 
-.log_a{
+.log_a {
 	width: 100%;
 	text-align: center;
 	padding-left: 60px;
 }
 
-.log_a a{
+.log_a a {
 	font-size: 12px;
 	line-height: 20px;
 	margin-top: 10px;
@@ -347,21 +356,21 @@ input[type=submit]:hover{
 	margin-right: 0;
 }
 
-.log_a a:last-child{
+.log_a a:last-child {
 	float: right;
 }
 
-.log_a ul li{
+.log_a ul li {
 	display: inline-block;
 	float: left;
 }
 
-.log_a ul{
+.log_a ul {
 	width: 390px;
 	background: #000;
 }
 
-.login_form{
+.login_form {
 	width: 580px;
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -374,7 +383,7 @@ input[type=submit]:hover{
 	padding-bottom: 0;
 }
 
-.login_form h3{
+.login_form h3 {
 	color: #444;
 	margin-top: 20px;
 	font-size: 22px;
@@ -383,12 +392,12 @@ input[type=submit]:hover{
 	padding-bottom: 20px;
 }
 
-.social_login{
+.social_login {
 	height: 80px;
 	border-bottom: 1px solid #ddd;
 }
 
-.social_login a.twitter_login{
+.social_login a.twitter_login {
 	background: #0BA8D6;
 	color: #fff;
 	text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
@@ -405,7 +414,7 @@ input[type=submit]:hover{
 	margin-left: -10px
 }
 
-.social_login a.facebook_login{
+.social_login a.facebook_login {
 	background: #415D9C;
 	border: 1px solid #3A5695;
 	font-family: Arial;
@@ -424,18 +433,18 @@ input[type=submit]:hover{
 	font-weight: bold;
 }
 
-.email_log{
+.email_log {
 	height: 220px;
 	background-image: -webkit-linear-gradient(#FEFEFE,#F4F4F4);
 	background-image: -moz-linear-gradient(#FEFEFE,#F4F4F4);
 	background-image: -o-linear-gradient(#FEFEFE,#F4F4F4);
 }
 
-.email_log form{
+.email_log form {
 	margin-top: 20px;
 }
 
-.email_log input[type="submit"]{
+.email_log input[type="submit"] {
 	background-image: -webkit-linear-gradient(#94D52D,#65C31F);
 	background-image: -moz-linear-gradient(#94D52D,#65C31F);
 	background-image: -o-linear-gradient(#94D52D,#65C31F);
@@ -446,17 +455,17 @@ input[type=submit]:hover{
 	border: 1px solid #57AF17;
 }
 
-.email_log input[type="submit"]:hover{
+.email_log input[type="submit"]:hover {
 	background-position: 0 0;
 	border-color: #56AD14;
 	box-shadow: none;
 }
 
-.login_actions{
+.login_actions {
 	text-align: center;
 }
 
-.login_actions a{
+.login_actions a {
 	color: #666;
 	font-weight: bold;
 	font-family: Arial, Helvetica, sans-serif;
@@ -464,16 +473,16 @@ input[type=submit]:hover{
 	
 }
 
-.login_actions a:last-child{
+.login_actions a:last-child {
 	margin-left: 3px;
 }
 
-.login_actions a:hover{
+.login_actions a:hover {
 	text-decoration: underline;
 	
 }
 
-.login_actions  span{
+.login_actions  span {
 	color: #999;
 	font-weight: normal;
 	text-decoration: none;
@@ -481,7 +490,79 @@ input[type=submit]:hover{
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-.sg .email_log{
+.sg .email_log {
 	height: 320px;
 }
 
+.top_content {
+	width: 980px;
+	border-radius: 10px;
+}
+
+.left {
+	width: 700px;
+	float: left;
+}
+
+.right {
+	width: 300px;
+	float: right;
+	height: 300px;
+}
+
+.profile_block {
+	width: 330px;
+	height: 400px;
+	background: #fff;
+	box-shadow: 0 0 5px #ddd;
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 20px;
+}
+
+.profile_block h3 {
+	overflow: hidden;
+	text-transform: capitalize;
+	float: right;
+	text-align:center;
+	width: 210px;
+	line-height: 100px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #D01F3C;
+	text-shadow: 0 0 1px #ccc;
+	display: inline-block;
+}
+
+.profile_top {
+	float: left;
+}
+
+.profile_posts {
+	background: #fff;
+	height: 200px;
+	float: left;
+	font-family: Arial;
+	padding: 15px;
+}
+
+.profile_nav {
+	text-align: right;
+	padding-right: 20px;
+	font-family: Arial;
+	border-bottom: 1px solid #ddd;
+}
+
+.profile_nav a {
+	text-decoration: none;
+	font-size: 14px;
+	color: #356AA0;
+}
+
+.profile_nav a:first-child{
+	margin-right: 8px;
+}
+
+.profile_nav a:hover {
+	color: #C3D9FF;
+}

@@ -56,7 +56,7 @@ var GuiController = {
 	},
 	
 	hideWindow : function () {	
-	  var body = $('body');
+	  //var body = $('body');
 	  var registerWindow = $('.register_window');
 	  var wrapper = $('.window_wrapper');
 	  wrapperLast = $('.window_wrapper:last');
