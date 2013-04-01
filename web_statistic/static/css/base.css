@@ -544,19 +544,21 @@ input[type=submit]:hover {
 	float: left;
 	font-family: Arial;
 	padding: 15px;
+	overflow: hidden;
 }
 
 .profile_nav {
 	text-align: right;
 	padding-right: 20px;
 	font-family: Arial;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #D01F3C;
 }
 
-.profile_nav a {
+.profile_nav span {
 	text-decoration: none;
 	font-size: 14px;
 	color: #356AA0;
+	cursor: pointer;
 }
 
 .profile_nav a:first-child{
@@ -565,4 +567,39 @@ input[type=submit]:hover {
 
 .profile_nav a:hover {
 	color: #C3D9FF;
+}
+
+.user_profile {
+	width: 300px;
+	height: 100px;
+	color: #666;
+	overflow: hidden;
+}
+
+.user_profile span.title{
+	color: #D01F3C;
+	font-style: italic;
+}
+
+.user_profile span{
+	font-size: 14px;
+}
+
+.user_last_posts {
+	width: 290px;
+}
+
+.one_post {
+
+	width: 280px;
+	margin: 10px;
+	padding: 10px;
+	padding-right: 0;
+    border-bottom: 1px dotted #da2c1a;
+	color: #666;
+	height: 30px;
+}
+
+.one_post span{
+	margin: 10px;
 }

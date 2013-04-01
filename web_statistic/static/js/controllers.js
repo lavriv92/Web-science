@@ -79,4 +79,26 @@ var GuiController = {
 	  		"margin-top":"40px"
 	  	},400);
 	},
+	
+	
+	showTabs : function (showIndex) {
+	  var userPosts = $('.user_last_posts');
+	  var userProfile = $('.user_profile');
+	  if (showIndex == 'profile') {
+	  	userProfile.css('margin-left','-400px');
+	  	userProfile.show();
+	  	userProfile.animate({
+	  		'margin-left':'0px'
+	  	});
+	  	userPosts.hide();
+	  } else if (showIndex == 'posts') {
+	  	userPosts.css('margin-left','-400px');
+	  	userPosts.show();
+	  	
+	  	userPosts.animate({
+	  		'margin-left':'0px'
+	  	});
+	  	userProfile.hide();
+	  }
+	}
 };
