@@ -574,7 +574,10 @@ input[type=submit]:hover {
 	height: 100px;
 	color: #666;
 	overflow: hidden;
-}
+	background: #f6f6f6;
+	border-radius: 5px;
+	padding-top: 10px;
+	}
 
 .user_profile span.title{
 	color: #D01F3C;
@@ -583,19 +586,23 @@ input[type=submit]:hover {
 
 .user_profile span{
 	font-size: 14px;
+	margin-left: 10px;
 }
 
 .user_last_posts {
-	width: 290px;
+	width: 300px;
+	background: #f6f6f6;
+	padding-bottom: 10px;
+	border-radius: 5px;
 }
 
 .one_post {
 
-	width: 280px;
+	width: 270px;
 	margin: 10px;
 	padding: 10px;
 	padding-right: 0;
-    border-bottom: 1px dotted #da2c1a;
+    border-bottom: 1px dotted #ffffff;
 	color: #666;
 	height: 30px;
 }

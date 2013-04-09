@@ -8,3 +8,6 @@ def show_login_page(request):
 
 def show_signup_page(request):
     return render_to_response('signup.html')
+
+def show_blog_page(request):
+    return render_to_response('blog.html')

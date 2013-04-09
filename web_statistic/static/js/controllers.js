@@ -81,9 +81,11 @@ var GuiController = {
 	},
 	
 	
-	showTabs : function (showIndex) {
-	  var userPosts = $('.user_last_posts');
-	  var userProfile = $('.user_profile');
+	showTabs : function (showIndex,block_id) {
+	  var postsStr = '#uPosts'+block_id;
+	  var profileStr = '#uProfile'+block_id;
+	  var userPosts = $(postsStr);
+	  var userProfile = $(profileStr);
 	  if (showIndex == 'profile') {
 	  	userProfile.css('margin-left','-400px');
 	  	userProfile.show();

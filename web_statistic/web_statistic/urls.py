@@ -17,5 +17,6 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^$', views.show_page),
     url(r'^login/$', views.show_login_page),
-    url(r'^signup/$', views.show_signup_page)
+    url(r'^signup/$', views.show_signup_page),
+    url(r'^blog/$', views.show_blog_page)
 )
