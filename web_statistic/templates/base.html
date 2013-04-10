@@ -13,17 +13,28 @@
 						<li><a href="#">About Us</a></li>
 						<li><a href="/blog/">Blog</a></li>
 					</ul>
+					{% if user.is_authenticated %}
+					<ul>
+						<li class="user_name">{{ user }}</li>
+						<li>
+							<form method="post" action="/logout/">
+								<button class="logout" onclick="this.form.submit();">Logout</button>
+							</form>
+						</li>
+					</ul>
+					{% else %}
 					<ul>
 						<li><div class="button" onclick="GuiController.loginWindow();">Log In</div></li>
 						<li><div class="button" onclick="GuiController.showWindow();">Sign Up</div></li>
 					</ul>
+					{% endif %}
 				</nav>
 			</div>
 		</header>
 		{% block content %}
 		{% endblock %}
         <footer> 
-            <div class="foot_wrapper"></div>
+            <div class="foot_wrapper"> </div>
         </footer>
 	</body>
 	<script type="text/javascript" src="/static/js/jquery-1.9.1.min.js"></script>

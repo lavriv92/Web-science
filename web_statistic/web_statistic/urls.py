@@ -18,5 +18,8 @@ urlpatterns = patterns('',
     url(r'^$', views.show_page),
     url(r'^login/$', views.show_login_page),
     url(r'^signup/$', views.show_signup_page),
-    url(r'^blog/$', views.show_blog_page)
+    url(r'^blog/$', views.show_blog_page),
+    url(r'^user_login/$', views.user_login),
+    url(r'^logout/$', views.user_logout),
+    url(r'^signup_user/$', views.user_registration)
 )

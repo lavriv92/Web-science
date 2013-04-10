@@ -10,13 +10,13 @@ var Elements = {
 							   '<a class="twitter">Sign Up with Twitter</a>'+
 							   '<a class="facebook">Sign Up with Facebook</a>'+
 							'</div>'+
-							'<div class="email_login">'+
+							'<div class="email_login"><form method="post" action="/signup_user/">'+
 								'<div class="email_title">Or with email</div>'+
-								'<input type="text" placeholder="Username"><br>'+
-								'<input type="text" placeholder="Email">'+
-								'<input type="password" placeholder="Password">'+
+								'<input name="username" type="text" placeholder="Username"><br>'+
+								'<input name="email" type="text" placeholder="Email">'+
+								'<input name="password" type="password" placeholder="Password">'+
 								'<input type="submit" value="Sign Up">'+
-							'</div>'+
+							'</form></div>'+
 							'<div class="login_a"><a href="/login/"><span>Already have an account?</span> Log in</a></div>'+
 							'</div>'+
 						'</div>'+
@@ -29,12 +29,12 @@ var Elements = {
 							   '<a class="twitter">Log In with Twitter</a>'+
 							   '<a class="facebook">Log In with Facebook</a>'+
 							'</div>'+
-							'<div class="email_login">'+
+							'<div class="email_login"><form method="post" action="/user_login/">'+
 								'<div class="email_title">Or with web-science account</div>'+
-								'<input type="text" placeholder="Username"><br>'+
-								'<input type="password" placeholder="Password">'+
+								'<input name="username" type="text" placeholder="Username"><br>'+
+								'<input name="password" type="password" placeholder="Password">'+
 								'<input type="submit" value="Log In">'+
-							'</div>'+
+							'</div><form>'+
 							'<div class="login_a log_a"><ul>'+
 								'<li><a href="/login/"><span>Forgott password?</span></a></li>'+
 								'<li><a href="/signup/"><span>Sign Up to web-sciense</span></a></li>'+

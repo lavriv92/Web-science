@@ -610,3 +610,17 @@ input[type=submit]:hover {
 .one_post span{
 	margin: 10px;
 }
+
+.logout{
+	color: #356AA0;
+	font-family: Arial;
+	border:none;
+	background: none;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.user_name{
+	color: #356AA0;
+	font-family: Arial;
+}
