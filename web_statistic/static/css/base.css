@@ -505,9 +505,17 @@ input[type=submit]:hover {
 }
 
 .right {
-	width: 300px;
+	width: 270px;
 	float: right;
-	height: 300px;
+	height: 500px;
+	background: #fff;
+	border-radius: #fff;
+	box-shadow: 0 0 10px #ddd;
+	border: 5px solid rgba(0, 0, 0, 0.2);
+	border-radius: 7px;
+	background-image: -webkit-linear-gradient(#FEFEFE,#F4F4F4);
+	background-image: -moz-linear-gradient(#FEFEFE,#F4F4F4);
+	background-image: -o-linear-gradient(#FEFEFE,#F4F4F4);
 }
 
 .profile_block {
@@ -577,7 +585,7 @@ input[type=submit]:hover {
 	background: #f6f6f6;
 	border-radius: 5px;
 	padding-top: 10px;
-	}
+}
 
 .user_profile span.title{
 	color: #D01F3C;
@@ -597,7 +605,6 @@ input[type=submit]:hover {
 }
 
 .one_post {
-
 	width: 270px;
 	margin: 10px;
 	padding: 10px;
@@ -616,11 +623,93 @@ input[type=submit]:hover {
 	font-family: Arial;
 	border:none;
 	background: none;
-	font-size: 16px;
+	font-size: 15px;
 	cursor: pointer;
 }
 
 .user_name{
 	color: #356AA0;
 	font-family: Arial;
+	line-height: 20px;
 }
+
+.user_name img{
+	width: 25px;
+	height: 25px;
+	margin-bottom: -7px;
+	margin-right: 11px;
+}
+
+.right li{
+	list-style: none;
+	margin: 15px;
+	line-height: 40px;
+	border-bottom: #D01F3C solid 1px;
+}
+
+.right li a {
+	color: #D01F3C;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+.social_links{
+	margin-top: 20px;
+}
+
+.social_links li{
+	border: none;
+	text-align: center;
+}
+
+.social_links a.twitter_link{
+	background: url('/static/img/icon-twitter.png');
+	background-image: -webkit-linear-gradient(#35BFE7,#0BA8D6);
+	background-image: -moz-linear-gradient(#35BFE7,#0BA8D6);
+	background-image: -o-linear-gradient(#35BFE7,#0BA8D6);
+	border-radius: 4px;
+	width: 80%;
+	font-size: 16px;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	font-family: Arial;
+	font-weight: bold;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: 20px;
+	text-align: center;
+	text-shadow: 0 1px 0 #1A64BF;
+	border: 1px solid #136AC1;
+	display: block;
+}
+
+.social_links a.facebook_link{
+	background-image: -webkit-linear-gradient(#679ACE,#4264B3);
+	background-image: -moz-linear-gradient(#679ACE,#4264B3);
+	background-image: -o-linear-gradient(#679ACE,#4264B3);
+	border-radius: 4px;
+	width: 80%;
+	font-size: 16px;
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	font-family: Arial;
+	font-weight: bold;
+	margin: 26px;
+	text-align: center;
+	text-shadow: 0 1px 0 #2D449E;
+	border: 1px solid #1B345A;
+	display: block;
+}
+
+.social_links a.facebook_link:hover {
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset;
+}
+
+.social_links a.twitter_link:hover {
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset;
+}
+
+

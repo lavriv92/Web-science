@@ -15,7 +15,10 @@
 					</ul>
 					{% if user.is_authenticated %}
 					<ul>
-						<li class="user_name">{{ user }}</li>
+						<li class="user_name">
+							<img src="http://localhost:8000/static/img/765-default-avatar.png">
+							 {{ user }}
+						</li>
 						<li>
 							<form method="post" action="/logout/">
 								<button class="logout" onclick="this.form.submit();">Logout</button>

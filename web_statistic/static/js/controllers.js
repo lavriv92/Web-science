@@ -87,20 +87,37 @@ var GuiController = {
 	  var userPosts = $(postsStr);
 	  var userProfile = $(profileStr);
 	  if (showIndex == 'profile') {
-	  	userProfile.css('margin-left','-400px');
-	  	userProfile.show();
+	  	userProfile.css({'margin-left':'-400px','opacity':'0'});
 	  	userProfile.animate({
-	  		'margin-left':'0px'
-	  	});
-	  	userPosts.hide();
+	  		'margin-left':'0px',
+	  		'opacity':'1'
+	  	}, 800);
+	  	userPosts.fadeOut(800);
+	  	userPosts.hide()
+	  	userProfile.show();
 	  } else if (showIndex == 'posts') {
-	  	userPosts.css('margin-left','-400px');
-	  	userPosts.show();
-	  	
+	  	userPosts.css({'margin-left':'-400px','opacity':'0'});
 	  	userPosts.animate({
-	  		'margin-left':'0px'
-	  	});
-	  	userProfile.hide();
+	  		'margin-left':'0px',
+	  		'opacity':'1'
+	  	},800);
+	  	userPosts.show()
+	  	userProfile.fadeOut()
+	  	userProfile.hide()
 	  }
+	},
+	
+    showAcElement : function  (elemNumber) {
+      var elemBlock = $('.right_acordeon div');
+      var currentBlockStr = '#acelement'+elemNumber;
+      var currentBlock = $(currentBlockStr);
+      elemBlock.css({'height':'50px'});
+      currentBlock.animate({'height':'150px'});
+    }
+};
+
+var AjaxController = {
+	simpleAjax : function  () {
+	  alert('hello');
 	}
 };

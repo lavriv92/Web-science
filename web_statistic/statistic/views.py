@@ -3,6 +3,8 @@ from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.cache import cache_page
 from django.contrib import auth
 from django.contrib.auth.models import User
+from models import *
+from datetime import date
 
 def all_users_genrator(params):
     for user in User.objects.all():
@@ -10,7 +12,9 @@ def all_users_genrator(params):
 
 
 def show_page(request):
-    return render_to_response('index.html', dict(user=request.user))
+    profiles = UserProfile.objects.all()\
+                                  .order_by('-id')[:6]
+    return render_to_response('index.html', dict(user=request.user, profiles=profiles))
 
 def show_login_page(request):
     return render_to_response('login.html')
@@ -48,7 +52,11 @@ def user_registration(request):
                                                 password=request.POST['password'],
                                                 email=request.POST['email'])
             new_user.save()
+            new_profile = UserProfile(user=new_user, 
+                                      date_of_birthday=date.today(), 
+                                      profile_picture_url='http://localhost:8000/static/img/765-default-avatar.png')
+            new_profile.save()
             next_url = '/login/'
     else:
-        next_url = '/'
+        next_url = '/signup/'
     return HttpResponseRedirect(next_url)

@@ -13,6 +13,7 @@ class UserProfile(models.Model):
 class Post(models.Model):
     user = models.ForeignKey(User)
     title = models.CharField(max_length=155)
+    #public_date = models.DateField()
     content = models.TextField()
     
     def __unicode__(self):
