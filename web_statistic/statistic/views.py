@@ -5,31 +5,31 @@ from django.contrib import auth
 from django.contrib.auth.models import User
 from models import *
 from datetime import date
-from custom_decorators import responding_static_function
+from custom_decorators import responding_static_page
 
 def all_users_genrator(params):
     for user in User.objects.all():
         yield user
 
-@responding_static_function('index.html')
+@responding_static_page('index.html')
 def show_page(request):
     profiles = UserProfile.objects.all()\
                                   .order_by('-id')[:6]
     return dict(user=request.user, profiles=profiles)
 
-@responding_static_function('login.html')
+@responding_static_page('login.html')
 def show_login_page(request):
     return 
 
-@responding_static_function('signup.html')
+@responding_static_page('signup.html')
 def show_signup_page(request):
     return 
 
-@responding_static_function('blog.html')
+@responding_static_page('blog.html')
 def show_blog_page(request):
     return dict(user=request.user)
 
-@responding_static_function('profile.html')
+@responding_static_page('profile.html')
 def show_profile_page(request, user_id):
     profile = UserProfile.objects.get(user = User.objects.get(id=user_id))
     return dict(user=request.user, profile=profile)
