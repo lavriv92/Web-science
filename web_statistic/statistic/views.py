@@ -1,29 +1,38 @@
-from django.shortcuts import render_to_response, HttpResponseRedirect
+from django.shortcuts import HttpResponseRedirect, HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.cache import cache_page
 from django.contrib import auth
 from django.contrib.auth.models import User
 from models import *
 from datetime import date
+from custom_decorators import responding_static_function
 
 def all_users_genrator(params):
     for user in User.objects.all():
         yield user
 
-
+@responding_static_function('index.html')
 def show_page(request):
     profiles = UserProfile.objects.all()\
                                   .order_by('-id')[:6]
-    return render_to_response('index.html', dict(user=request.user, profiles=profiles))
+    return dict(user=request.user, profiles=profiles)
 
+@responding_static_function('login.html')
 def show_login_page(request):
-    return render_to_response('login.html')
+    return 
 
+@responding_static_function('signup.html')
 def show_signup_page(request):
-    return render_to_response('signup.html')
+    return 
 
+@responding_static_function('blog.html')
 def show_blog_page(request):
-    return render_to_response('blog.html', dict(user=request.user))
+    return dict(user=request.user)
+
+@responding_static_function('profile.html')
+def show_profile_page(request, user_id):
+    profile = UserProfile.objects.get(user = User.objects.get(id=user_id))
+    return dict(user=request.user, profile=profile)
 
 @csrf_exempt
 def user_login(request):
@@ -32,9 +41,14 @@ def user_login(request):
             user = auth.authenticate(username=str(request.POST['username']), password=str(request.POST['password']))
             if user is not None:
                 auth.login(request, user)
+                url = "/profile/%s/" %user.id
             else:
-                error = "Authorization failed!!!"
-    return HttpResponseRedirect('/')
+                url = "/login/"
+        else:
+            url = "/login/"
+    else:
+        return HttpResponse(status=400)
+    return HttpResponseRedirect(url)
 
 @csrf_exempt
 def user_logout(request):
@@ -60,3 +74,7 @@ def user_registration(request):
     else:
         next_url = '/signup/'
     return HttpResponseRedirect(next_url)
+
+@csrf_exempt
+def responding_current_svg_status(request):
+    pass

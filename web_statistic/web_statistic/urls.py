@@ -21,5 +21,6 @@ urlpatterns = patterns('',
     url(r'^blog/$', views.show_blog_page),
     url(r'^user_login/$', views.user_login),
     url(r'^logout/$', views.user_logout),
-    url(r'^signup_user/$', views.user_registration)
+    url(r'^signup_user/$', views.user_registration),
+    url(r'^profile/(?P<user_id>\d+)/$', views.show_profile_page)
 )
