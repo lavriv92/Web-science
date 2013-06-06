@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<div>
+	<div class="blog_content">
+		<div class="pr_header">
+			<div class="profile_picture">
+				<img src="{{ profile.profile_picture_url }}">
+			</div>
+			<div class="profile_right">
+				<span>{{ profile.user.username }}</span>
+				<span class="location">Location:<span>{{ profile.location }}</span></span>
+				<span class="date">Date:<time class="date_con">{{ profile.date_of_birthday }}</time></span>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

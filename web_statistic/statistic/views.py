@@ -38,7 +38,8 @@ def show_profile_page(request, user_id):
 def user_login(request):
     if request.method == 'POST':
         if 'username' in request.POST and 'password' in request.POST:
-            user = auth.authenticate(username=str(request.POST['username']), password=str(request.POST['password']))
+            user = auth.authenticate(username=str(request.POST['username']),
+                                     password=str(request.POST['password']))
             if user is not None:
                 auth.login(request, user)
                 url = "/profile/%s/" %user.id
